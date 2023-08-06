@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial;
+    background-color: white;
+}
+
+.container{
+    display: flex;
+    margin: auto;
+    background-color: rgba(20, 18, 18, 0.658);
+    padding: 20px;
+}
+
+/*TITULO .*/
+.container h2{
+    margin: auto;
+    color: white;
+    font-family: Elsie;
+    font-size: 32px;
+    margin-bottom: -10px;
+    margin-right: 28%;
+}
+
+.menu {
+    display: flex;
+    align-items: end;
+} 
+
+.menu ul li a {
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+
+}
+nav ul {
+    display: flex;
+    padding: 14px;
+    gap: 20px;  
+    list-style: none;
+    margin-bottom: -17px;
+}
+
+.menu ul li :hover{
+    text-decoration:underline;
+    color:white;
+}
