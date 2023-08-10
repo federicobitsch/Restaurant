@@ -5,7 +5,7 @@
 }
 body{
     font-family: Arial;
-    background: url(/Restaurante-master/Restaurante/imagenes/pexels-jonathan-borba-2983101.jpg);/* fixed; SE QUEDA FIJO LA IMAGEN*/
+    background: url(/Restaurante/imagenes/pexels-jonathan-borba-2983101.jpg);/* fixed; SE QUEDA FIJO LA IMAGEN*/
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:cover;

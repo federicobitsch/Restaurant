@@ -9,6 +9,7 @@ body{
 }
 
 .container{
+ 
     display: flex;
     margin: auto;
     background-color: rgba(20, 18, 18, 0.658);
@@ -38,14 +39,117 @@ body{
 
 }
 nav ul {
-    display: flex;
-    padding: 14px;
-    gap: 20px;  
-    list-style: none;
-    margin-bottom: -17px;
+ display: flex;
+ padding: 14px;
+ gap: 20px;  
+ list-style: none;
+ margin-bottom: -17px;
 }
 
 .menu ul li :hover{
-    text-decoration:underline;
-    color:white;
+  text-decoration:underline;
+  color:white;
+}
+
+.nosotros{
+   display: flex;
+   padding: 5%;
+   align-items: start;
+   /* background: url(/Restaurante/imagenes/nosotros\ imagen.jpg);/* fixed; SE QUEDA FIJO LA IMAGEN*/ 
+}
+
+.nosotros h2{
+  position: absolute;
+  font-size: 30px;
+  font-weight: 620;
+}
+
+.parrafo{
+  padding: auto;
+  text-align:justify;
+  margin-left:30%;
+}  
+
+
+/*CAROSEL IMAGEN*/
+
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+    
+}
+  
+.carousel-container {
+  display: flex;
+  width: 300%; /* 3 imágenes, cada una con un ancho del 100% */
+}
+
+.carousel img {
+  width: 18%; /* Ancho de cada imagen */
+  height: auto;
+}
+
+.carousel-prev, .carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.carousel-prev {
+  left: 10px;
+}
+
+.carousel-next {
+  right: 10px;
+}
+
+.menu-text{
+  display: inline-block;
+  text-align: center;
+  padding: 6rem;
+  margin: auto; 
+  width: 100%;
+  height: auto;
+}
+
+
+.menu-text h2{
+  font-size: 30px;
+  justify-content: center;
+}
+
+.menu-text p{
+  display: flex;
+  padding: auto;
+  margin: 20px;
+}
+
+/*BOTONES DEL MENU . */
+
+.buttons{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin: auto;
+  padding: 30px;
+}
+
+
+.Picadas{ 
+  color: black;
+  text-decoration: none;
+  border-radius: 10px;
+  width: 100px;
+  height: 30px;
+ 
+  border-color: red;
 }
