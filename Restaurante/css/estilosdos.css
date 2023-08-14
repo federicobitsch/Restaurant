@@ -206,13 +206,19 @@ nav ul {
   transform: scale(1.1); /* Ajusta el valor según el efecto que desees */
 }
 
-.footer-main{
-  background-color: red;
-  padding: 4em;
-  color: white;
+footer {
+  padding: 2em;
+  /* ... estilos previos ... */
+  display: flex;
+  border-top: 1px solid #ccc;
+  font-size: 14px;
+ justify-content: space-between;
 }
-.footer-main p{
-  font-size: 16px;
-  justify-content: center;
-  margin-bottom: 2px;
+
+footer ul  {
+  display: flex;
+  list-style: none;
+  padding: 10px;
+  gap: 20px;
+ 
 }
