@@ -148,8 +148,71 @@ nav ul {
   color: black;
   text-decoration: none;
   border-radius: 10px;
-  width: 100px;
+  width: 110px;
   height: 30px;
- 
   border-color: red;
+}
+
+.Picadas:hover{
+  background-color: rgb(255, 255, 255);
+  color: black;
+  cursor: pointer;
+}
+
+.img-menus {
+  display: flex;
+  height: 61%;
+}
+.img-menus img{
+  flex-basis: 20%; /*Que se ocupe el 20% del acncho del contenedor*/
+  align-items: center;
+  width: 15%;
+}
+
+.img-menus h4,p {
+  display: flex;
+  align-items: end;
+}
+
+.text-events{
+  margin: 20px;
+  color: rgb(0, 0, 0);
+  font-size: 26px;
+
+}
+
+
+.containerr {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10em;
+  width: 100%; /* Ajusta el ancho según tus necesidades */
+  margin: auto;
+
+}
+
+.row {
+  display: flex;
+}
+
+.cell img {
+  padding: 6px;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s; /* Para animar el efecto hover */
+}
+
+.cell:hover img {
+  transform: scale(1.1); /* Ajusta el valor según el efecto que desees */
+}
+
+.footer-main{
+  background-color: red;
+  padding: 4em;
+  color: white;
+}
+.footer-main p{
+  font-size: 16px;
+  justify-content: center;
+  margin-bottom: 2px;
 }
