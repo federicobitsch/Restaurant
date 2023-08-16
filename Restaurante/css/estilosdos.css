@@ -70,16 +70,13 @@ nav ul {
   margin-left:30%;
 }  
 
-
 /*CAROSEL IMAGEN*/
 
 .carousel {
   position: relative;
   width: 100%;
   overflow: hidden;
-    
 }
-  
 .carousel-container {
   display: flex;
   width: 300%; /* 3 imágenes, cada una con un ancho del 100% */
@@ -112,6 +109,8 @@ nav ul {
   right: 10px;
 }
 
+
+/*MENU DE COMIDAS . */
 .menu-text{
   display: inline-block;
   text-align: center;
@@ -120,7 +119,6 @@ nav ul {
   width: 100%;
   height: auto;
 }
-
 
 .menu-text h2{
   font-size: 30px;
@@ -133,8 +131,6 @@ nav ul {
   margin: 20px;
 }
 
-/*BOTONES DEL MENU . */
-
 .buttons{
   display: flex;
   justify-content: center;
@@ -142,7 +138,6 @@ nav ul {
   margin: auto;
   padding: 30px;
 }
-
 
 .Picadas{ 
   color: black;
@@ -158,37 +153,32 @@ nav ul {
   color: black;
   cursor: pointer;
 }
-
-.img-menus {
-  display: flex;
-  height: 61%;
-}
-.img-menus img{
-  flex-basis: 20%; /*Que se ocupe el 20% del acncho del contenedor*/
-  align-items: center;
-  width: 15%;
-}
-
-.img-menus h4,p {
-  display: flex;
-  align-items: end;
-}
-
-.text-events{
-  margin: 20px;
-  color: rgb(0, 0, 0);
-  font-size: 26px;
-
-}
-
-
-.containerr {
+/* -.IMAGENES DEL MENU.- */
+.container-menu-img {
   display: flex;
   flex-wrap: wrap;
-  padding: 10em;
-  width: 100%; /* Ajusta el ancho según tus necesidades */
-  margin: auto;
+}
 
+.container-menu-img .item {
+  flex-basis: 25%;
+  box-sizing: border-box; 
+  padding: 20px;
+  
+}
+
+.container-menu-img img {
+  width: 80%;
+  height: auto;
+}
+
+.container-menu-img p {
+  margin-top: 10px;
+}
+
+
+/*-.EVENTOS.-*/
+.containerr{
+  padding: 14em;
 }
 
 .row {
@@ -196,29 +186,81 @@ nav ul {
 }
 
 .cell img {
-  padding: 6px;
-  width: 100%;
+  padding: 12px;
+  width: 88%;
   height: auto;
-  transition: transform 0.3s; /* Para animar el efecto hover */
+  transition: transform 0.5s; /* Para animar el efecto hover */
+}
+.text-events {
+  margin: 1em; 
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 500;
+  display: flex;
+  justify-content: start;
+  padding: 16px;
 }
 
 .cell:hover img {
   transform: scale(1.1); /* Ajusta el valor según el efecto que desees */
+  opacity: .9;
 }
 
 footer {
-  padding: 2em;
-  /* ... estilos previos ... */
   display: flex;
-  border-top: 1px solid #ccc;
-  font-size: 14px;
- justify-content: space-between;
+  padding: 4em;
+  background-color: rgb(255, 255, 255);
+  /* ... estilos previos ... */
+  border-top: 5px solid #ccc;
+  justify-content: space-between;
+
+}
+footer a{
+  text-decoration: none;  
+  color: black;
 }
 
-footer ul  {
+footer ul {
   display: flex;
-  list-style: none;
-  padding: 10px;
-  gap: 20px;
- 
+  padding: 20px;
+  gap:10px;
+  list-style:none;
+  font-size: 18px;
+}
+
+footer h3{
+  background-color: red;
+  margin-bottom: 40px;
+}
+
+
+/*BOTTON DE WHASAPP FIXED .*/
+.container-boton{
+  border: 1px solid #fff;
+  position: fixed;
+  z-index: 999;
+  border-radius: 50%;
+  bottom: 20px;
+  right: 20px;
+  padding: 14px;
+  transition: ease 0.3s;
+  animation: efecto 1.6s infinite;
+}
+
+.container-boton:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.boton{
+  width: 60px;
+  transition: ease 1s;
+}
+
+@keyframes efecto{
+  0%{
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+  }
+  100%{
+      box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+  }
 }
