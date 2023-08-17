@@ -9,7 +9,6 @@ body{
 }
 
 .container{
- 
     display: flex;
     margin: auto;
     background-color: rgba(20, 18, 18, 0.658);
@@ -55,19 +54,19 @@ nav ul {
    display: flex;
    padding: 5%;
    align-items: start;
-   /* background: url(/Restaurante/imagenes/nosotros\ imagen.jpg);/* fixed; SE QUEDA FIJO LA IMAGEN*/ 
 }
-
+/*NOSOTROS */
 .nosotros h2{
   position: absolute;
-  font-size: 30px;
-  font-weight: 620;
+  font-size: 34px;
+  font-weight: 700;
 }
 
 .parrafo{
   padding: auto;
   text-align:justify;
   margin-left:30%;
+  font-size: 20px;
 }  
 
 /*CAROSEL IMAGEN*/
@@ -121,42 +120,51 @@ nav ul {
 }
 
 .menu-text h2{
-  font-size: 30px;
+  font-size: 32px;
+  font-weight: 600;
   justify-content: center;
 }
 
 .menu-text p{
+  color: black;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
   display: flex;
   padding: auto;
-  margin: 20px;
+  margin: 22px;
+  justify-content: center;
+  text-align: center;
+
 }
 
 .buttons{
   display: flex;
   justify-content: center;
-  gap: 50px;
-  margin: auto;
-  padding: 30px;
+  gap: 4em; 
+  height: 2em;
+  font-size: 22px;
 }
 
 .Picadas{ 
-  color: black;
-  text-decoration: none;
+  width: 16em;
   border-radius: 10px;
-  width: 110px;
-  height: 30px;
-  border-color: red;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+
 }
 
 .Picadas:hover{
-  background-color: rgb(255, 255, 255);
-  color: black;
+  background-color: #4CAF50; /* Green */
+  color: white;
   cursor: pointer;
 }
+
 /* -.IMAGENES DEL MENU.- */
 .container-menu-img {
   display: flex;
-  flex-wrap: wrap;
+  padding: 1em;
+
 }
 
 .container-menu-img .item {
@@ -178,7 +186,7 @@ nav ul {
 
 /*-.EVENTOS.-*/
 .containerr{
-  padding: 14em;
+  padding: 10em;
 }
 
 .row {
@@ -205,33 +213,47 @@ nav ul {
   opacity: .9;
 }
 
-footer {
+/*FOOTER*/
+.footer{
+   border: 1px solid red;
+}
+.footer-container {
+ 
   display: flex;
-  padding: 4em;
-  background-color: rgb(255, 255, 255);
-  /* ... estilos previos ... */
-  border-top: 5px solid #ccc;
   justify-content: space-between;
-
-}
-footer a{
-  text-decoration: none;  
-  color: black;
+  align-items: flex-start;
+  padding: 30px;
+  background-color: #f2f2f2;
 }
 
-footer ul {
+.footer-left, .footer-center, .footer-right {
+  width: 17%;
+ 
+  
+}
+.footer-left a{
+   text-decoration: none;
+
+   color: black;
+}
+.social-media {
+  list-style: none;
+  padding: 0;
   display: flex;
-  padding: 20px;
-  gap:10px;
-  list-style:none;
-  font-size: 18px;
+  justify-content: space-between;
+  width: 100px;
 }
 
-footer h3{
-  background-color: red;
-  margin-bottom: 40px;
+.footer-bottom {
+  background-color: #f2f2f2;
+  padding: 10px;
+  text-align: center;
 }
 
+.footer-center{
+  display: inline;
+  text-align: center;
+}
 
 /*BOTTON DE WHASAPP FIXED .*/
 .container-boton{
@@ -241,18 +263,18 @@ footer h3{
   border-radius: 50%;
   bottom: 20px;
   right: 20px;
-  padding: 14px;
+  padding: 12px;
   transition: ease 0.3s;
   animation: efecto 1.6s infinite;
 }
 
 .container-boton:hover{
-  transform: scale(1.1);
+  transform: scale(1);
   transition: 0.3s;
 }
 
 .boton{
-  width: 60px;
+  width: 40px;
   transition: ease 1s;
 }
 
